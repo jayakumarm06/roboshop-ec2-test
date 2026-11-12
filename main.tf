@@ -1,5 +1,6 @@
 module "ec2" {
-  source      = "../terraform-aws-instance"
+  # source      = "../terraform-aws-instance"\
+  source      = "git::https://github.com/jayakumarm06/terraform-aws-instance.git?ref=main"
   project     = "roboshop"
   environment = "dev"
   component   = "mongodb"
